@@ -2,7 +2,8 @@
   remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
 
 [build]
-  command = "NODE_OPTIONS='--max-old-space-size=4096' bun run build"
+  # Ensure dependencies install properly
+  command = "npm install && NODE_OPTIONS='--max-old-space-size=4096' bun run build"
   publish = "out"
 
 [build.environment]
