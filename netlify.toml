@@ -2,13 +2,17 @@
   remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
 
 [build]
-  # Ensure dependencies install properly
-  command = "npm install && NODE_OPTIONS='--max-old-space-size=4096' bun run build"
+  command = "npm install && npm run build"
   publish = "out"
 
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
   NODE_ENV = "production"
+  NPM_CONFIG_PRODUCTION = "false"
+
+# Use Netlify Next.js plugin for optimal deployment
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
   NEXT_PUBLIC_SITE_URL = "https://onryl-entrance-clone.netlify.app"
 
 [[plugins]]
