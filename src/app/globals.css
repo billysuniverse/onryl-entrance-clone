@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 14% 12%;
+    --foreground: 220 13% 95%;
+    --card: 225 14% 15%;
+    --card-foreground: 220 13% 95%;
+    --popover: 220 14% 12%;
+    --popover-foreground: 220 13% 95%;
+    --primary: 265 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 230 14% 20%;
+    --secondary-foreground: 220 13% 95%;
+    --muted: 230 14% 20%;
+    --muted-foreground: 220 13% 60%;
+    --accent: 265 80% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 230 14% 20%;
+    --input: 230 14% 25%;
+    --ring: 265 80% 60%;
+    --radius: 0.5rem;
+    --chart-1: 265 80% 60%; /* Purple - primary */
+    --chart-2: 200 80% 50%; /* Blue */
+    --chart-3: 130 50% 50%; /* Green */
+    --chart-4: 32 95% 55%;  /* Orange */
+    --chart-5: 0 70% 50%;   /* Red */;
+
+    /* Entrance specific colors */
+    --entrance-bg: 230 14% 10%;
+    --entrance-sidebar: 230 17% 15%;
+    --entrance-card: 230 14% 15%;
+    --entrance-border: 230 14% 20%;
+    --entrance-primary: 265 80% 60%;
+    --entrance-primary-light: 265 80% 70%;
+    --entrance-text-primary: 220 13% 95%;
+    --entrance-text-secondary: 220 13% 70%;
+    --entrance-text-muted: 220 13% 60%;
+  }
+
+  .dark {
+    --background: 220 14% 12%;
+    --foreground: 220 13% 95%;
+    --card: 225 14% 15%;
+    --card-foreground: 220 13% 95%;
+    --popover: 220 14% 12%;
+    --popover-foreground: 220 13% 95%;
+    --primary: 265 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 230 14% 20%;
+    --secondary-foreground: 220 13% 95%;
+    --muted: 230 14% 20%;
+    --muted-foreground: 220 13% 60%;
+    --accent: 265 80% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 230 14% 20%;
+    --input: 230 14% 25%;
+    --ring: 265 80% 60%;
+    --chart-1: 265 80% 60%; /* Purple - primary */
+    --chart-2: 200 80% 50%; /* Blue */
+    --chart-3: 130 50% 50%; /* Green */
+    --chart-4: 32 95% 55%;  /* Orange */
+    --chart-5: 0 70% 50%;   /* Red */;
+
+    /* Entrance specific colors */
+    --entrance-bg: 230 14% 10%;
+    --entrance-sidebar: 230 17% 15%;
+    --entrance-card: 230 14% 15%;
+    --entrance-border: 230 14% 20%;
+    --entrance-primary: 265 80% 60%;
+    --entrance-primary-light: 265 80% 70%;
+    --entrance-text-primary: 220 13% 95%;
+    --entrance-text-secondary: 220 13% 70%;
+    --entrance-text-muted: 220 13% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
